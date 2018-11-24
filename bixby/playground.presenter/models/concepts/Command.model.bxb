@@ -1,0 +1,4 @@
+enum (Command) {
+  description (Command to execute remotly)
+  symbol (Color)
+}

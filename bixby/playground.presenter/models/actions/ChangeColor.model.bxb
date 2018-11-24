@@ -1,0 +1,11 @@
+action (ChangeColor) {
+  type (Search)
+  description (Change the current color)
+  collect{
+    input (color){
+      type (Color)
+      min (Required) max (One)
+    }
+  }
+  output (Response)
+}

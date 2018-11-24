@@ -1,0 +1,13 @@
+endpoints {
+  authorization {
+    none
+  }
+
+  action-endpoints {
+    action-endpoint (ChangeColor) {
+      accepted-inputs (color)
+      local-endpoint (ChangeColor.js)
+    }
+
+  }
+}

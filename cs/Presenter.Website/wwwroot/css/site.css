@@ -1,0 +1,98 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+.draw-context {
+    border: 1px dashed #b4b1b1;
+    height: 600px;
+    width: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #ededed;
+    display: flex;
+}
+
+    .draw-context .draw-toolbox {
+        height: 100%;
+        width: 80px;
+        background: #dbdfffdb;
+        border-radius: 10px 2px 2px 10px;
+        border-right: 2px solid #c8c8c8;
+        padding: 14px 1px;
+    }
+
+        .draw-context .draw-toolbox .tool-button {
+            background-color: #077c07;
+            color: white;
+            border: 1px solid #33b811;
+            padding: 4px 12px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+
+            .draw-context .draw-toolbox .tool-button:hover {
+                background-color: #10c810;
+                color: #0d4d01;
+                font-weight: bold;
+            }
+
+    .draw-context .draw-content {
+        background-color: #d1c2c2;
+        width: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+        .draw-context .draw-content .comp-circle.comp {
+            border-radius: 100%;
+            background-color: white;
+            height: 90px;
+            width: 90px;
+        }
+
+        .draw-context .draw-content .comp-text.comp {
+            border-radius: 8px;
+            background-color: white;
+            padding: 4px 10px;
+            display: initial;
+        }
+
+        .draw-context .draw-content .comp.selected {
+            border: 2px solid #eb2323;
+        }
